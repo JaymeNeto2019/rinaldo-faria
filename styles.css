@@ -12,3 +12,10 @@
 .hero h1 span{color:#bd8800;background:linear-gradient(transparent 64%,#ffdf39 64%);padding-right:.08em}
 .care-tagline{font-size:clamp(19px,2.1vw,25px);font-weight:800;line-height:1.35;color:var(--blue);max-width:530px;margin:-5px 0 18px}
 @media(max-width:600px){.care-tagline{font-size:19px;margin:0 0 18px}}
+
+/* Canais de atendimento separados */
+.contact-options{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.contact-options .btn{width:100%;max-width:370px}
+.contact-options .btn-instagram{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+.contact-options .btn-instagram:hover{background:var(--light);border-color:var(--blue)}
+.contact-options p{margin:4px 0 0}
