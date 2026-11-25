@@ -5,3 +5,10 @@
 
 /* Quatro especialidades na faixa de apresentação */
 @media (min-width:721px) and (max-width:1000px){.credential-grid>div{padding:4px 10px;gap:9px}.credential-icon{width:42px;height:42px}.credential-grid strong{font-size:15px}}
+
+/* Destaque institucional solicitado: fundo branco e mensagem forte */
+.hero{background:#fff}
+.hero h1{color:var(--navy);letter-spacing:-.065em}
+.hero h1 span{color:#bd8800;background:linear-gradient(transparent 64%,#ffdf39 64%);padding-right:.08em}
+.care-tagline{font-size:clamp(19px,2.1vw,25px);font-weight:800;line-height:1.35;color:var(--blue);max-width:530px;margin:-5px 0 18px}
+@media(max-width:600px){.care-tagline{font-size:19px;margin:0 0 18px}}
