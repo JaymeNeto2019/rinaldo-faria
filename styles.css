@@ -19,3 +19,6 @@
 .contact-options .btn-instagram{background:#fff;color:var(--navy);border:2px solid var(--navy)}
 .contact-options .btn-instagram:hover{background:var(--light);border-color:var(--blue)}
 .contact-options p{margin:4px 0 0}
+
+/* Destaque da mensagem institucional em verde profundo */
+.hero-description{color:#126b39;font-weight:750;border-left:5px solid #e0bf25;padding-left:16px}
