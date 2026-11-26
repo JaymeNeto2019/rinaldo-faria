@@ -156,7 +156,7 @@ h2 span { color: var(--green); }
   height: 76px;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center 19%;
+  object-position: 56% 21%;
   background: var(--yellow-light);
   border: 2px solid var(--yellow);
 }
@@ -377,29 +377,14 @@ footer { padding-block: 24px; background: var(--surface); border-top: 1px solid 
 
 .hero-visual {
   position: absolute;
-  inset: 0 0 0 49%;
-}
-.hero-visual::before, .hero-visual::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-}
-.hero-visual::before {
-  background: linear-gradient(128deg, #fff5d6 24%, #ffca30 63%, #f5af00 100%);
-  clip-path: polygon(79% 0, 100% 0, 100% 100%, 19% 100%);
-}
-.hero-visual::after {
-  background: #ffd34b66;
-  clip-path: polygon(79% 0, 100% 0, 100% 42%, 73% 100%, 24% 100%);
+  inset: 0 0 0 47.7%;
 }
 .hero-photo {
-  position: absolute;
-  z-index: 1;
-  width: 91%;
-  height: auto;
-  max-width: 970px;
-  right: -1%;
-  top: -2.5%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right top;
+  mask-image: linear-gradient(to right, transparent, #000 9%);
 }
 
 @media (max-width: 1100px) {
@@ -414,10 +399,8 @@ footer { padding-block: 24px; background: var(--surface); border-top: 1px solid 
   .hero-description { font-size: clamp(16px, 2.9vw, 22px); }
   .hero-areas { font-size: clamp(13px, 2.25vw, 17px); margin-block: 27px; }
   .hero-button.btn { font-size: clamp(16px, 3.2vw, 21px); min-height: 48px; }
-  .hero-visual { position: relative; inset: auto; height: clamp(355px, 99vw, 600px); }
-  .hero-visual::before { clip-path: polygon(64% 0, 100% 0, 100% 100%, 11% 100%); }
-  .hero-visual::after { clip-path: polygon(64% 0, 92% 0, 100% 42%, 73% 100%, 14% 100%); }
-  .hero-photo { width: min(85%, 500px); top: 0; right: max(0px, calc((100% - 545px) / 3)); }
+  .hero-visual { position: relative; inset: auto; width: min(100%, 650px); margin-inline: auto 0; }
+  .hero-photo { height: auto; }
 }
 @media (max-width: 620px) {
   .nav-wrap { width: calc(100% - 32px); gap: 8px 12px; padding-block: 10px 12px; }
@@ -439,6 +422,7 @@ footer { padding-block: 24px; background: var(--surface); border-top: 1px solid 
   .nav-contacts { grid-column: 1 / -1; gap: 6px; }
   .nav-contacts a { font-size: 12px; padding-inline: .65em; }
   .hero-copy { padding-top: 33px; }
+  .hero-photo { mask-image: none; }
   .hero-areas { flex-wrap: wrap; gap: 12px 16px; }
   .hero-areas li { border: 0; padding: 0; }
   .hero-areas .icon { width: 2.2em; height: 2.2em; }
